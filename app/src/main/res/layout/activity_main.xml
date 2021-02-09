@@ -19,22 +19,56 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="8dp"
-        android:backgroundTint="@color/black"
-        android:src="@drawable/abc_vector_test"
+        android:src="@android:drawable/ic_input_add"
         app:fabSize="normal" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_margin="8dp"
+        android:layout_toLeftOf="@+id/floating_button_add"
+        android:src="@android:drawable/ic_input_add"
+        app:fabSize="normal" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:src="@color/purple_200" />
+        android:src="@android:drawable/ic_input_add"
+        android:tooltipText="Add" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingBtnnew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="false"
-        android:src="@color/purple_200" />
+
+        android:src="@android:drawable/ic_input_get"
+        android:tooltipText="Get" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/demoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:src="@android:drawable/ic_menu_week"
+        android:tooltipText="Get" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@+id/demoo"
+        android:src="@android:drawable/ic_menu_week"
+        android:tooltipText="Get" />
+
 </RelativeLayout>

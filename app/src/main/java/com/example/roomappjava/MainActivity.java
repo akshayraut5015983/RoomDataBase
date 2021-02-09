@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.roomappjava.model.DatabaseClient;
 import com.example.roomappjava.model.Task;
@@ -44,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        findViewById(R.id.demoo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, DemoActivity.class);
+                startActivity(intent);
+            }
+        });
         findViewById(R.id.floatingBtnnew).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
                 for (TaskAk taskAk : tasks) {
                     System.out.println(taskAk.getTask());
                     System.out.println(taskAk.getId());
+                    Toast.makeText(MainActivity.this, " " + tasks, Toast.LENGTH_SHORT).show();
                 }
-
             }
         }
 
@@ -111,5 +120,4 @@ public class MainActivity extends AppCompatActivity {
         GetTasks gt = new GetTasks();
         gt.execute();
     }
-
 }
